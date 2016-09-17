@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="layout.StorInfoFragment">
+    <FrameLayout
+        android:id="@+id/fgs_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/fgs_per"
+            android:background="@color/colorBacrGround"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/fgs_per_name"
+
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/fgs_per_tel"/>
+
+
+            <TextView
+                android:id="@+id/fgs_per_tel"
+
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:layout_centerInParent="true"/>
+            <TextView
+            android:id="@+id/fgs_per_address"
+
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:layout_below="@+id/fgs_per_tel"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fgs_sfbest"
+            android:visibility="visible"
+            android:background="@color/colorBacrGround"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/fgs_sfBest_storeNo"
+
+                android:textColor="@color/colorText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:layout_above="@+id/fgs_sfBest_address"/>
+            <TextView
+                android:id="@+id/fgs_sfBest_address"
+
+                android:textColor="@color/colorText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:id="@+id/fgs_sfBest_olderName"
+
+                android:textColor="@color/colorText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:layout_below="@+id/fgs_sfBest_address"/>
+            <TextView
+                android:id="@+id/fgs_sfBest_olderTel"
+
+                android:textColor="@color/colorText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:layout_below="@+id/fgs_sfBest_olderName"/>
+
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

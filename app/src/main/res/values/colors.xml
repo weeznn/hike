@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorFAB">#FFC408</color>
+    <color name="colorGoToNext">#c6b867</color>
+    <color name="colorBacrGround">#8bc7d1</color>
+    <color name="colorText">#FFFFFF</color>
+    <color name="colorTextBackGround">#c99833</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="text">#FFFFFF</color>
+    <color name="order_list_name_ing_color">#ffc408</color>
+    <color name="order_list_name_finish_color">#C0C0C0</color>
+    <color name="backColor">#9e7a7a</color>
+
+
+    <color name="backcolor1">#eed64e</color>
+    <color name="backcolor2">#8bc7d1</color>
+    <color name="backcolor3">#efe7b8</color>
+    <color name="backcolor4">#c6b867</color>
+    <color name="backcolor5">#97afac</color>
+
+
+
+    <color name="backcolor7">#268785</color>
+    <color name="backcolor8">#00896C</color>
+    <color name="backcolor9">#2D6D4B</color>
+    <color name="backcolor10">#096148</color>
+    <color name="backcolor11">#1B813E</color>
+    <color name="backcolor12">#577C8A</color>
+
+
+
+
+
+</resources>

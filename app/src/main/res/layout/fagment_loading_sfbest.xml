@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@color/colorBacrGround"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/loading_sfbest_go"
+            android:src="@drawable/ic_go_to_next"
+            android:scaleType="fitEnd"
+            android:paddingRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorBacrGround"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/_loading_sfBest_storeNO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <EditText
+                android:id="@+id/loading_sfBest_storeNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="店铺编号"
+                android:textColorHint="#FFFFFF"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"/>
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+
+
+
+</FrameLayout>

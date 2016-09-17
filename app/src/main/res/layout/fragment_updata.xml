@@ -1,0 +1,50 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBacrGround"
+    tools:context="layout.UpdataFragment">
+
+    <ImageView
+        android:id="@+id/fgu_image"
+        android:src="@drawable/vr"
+        android:layout_width="400dp"
+        android:layout_height="200dp"/>
+    <TextView
+        android:padding="16dp"
+        android:layout_below="@+id/fgu_image"
+        android:id="@+id/fgu_dbt"
+        android:textSize="15dp"
+        android:text="数据库版本："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:padding="16dp"
+        android:id="@+id/fgu_appt"
+        android:layout_below="@+id/fgu_dbt"
+        android:textSize="15dp"
+        android:text="hikeplus版本："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:padding="16dp"
+        android:id="@+id/fgu_dbv"
+        android:textSize="15dp"
+        android:text="111"
+        android:layout_toRightOf="@+id/fgu_dbt"
+        android:layout_below="@+id/fgu_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:padding="16dp"
+        android:id="@+id/fgu_appv"
+        android:textSize="15dp"
+        android:text="111"
+        android:layout_below="@+id/fgu_dbv"
+        android:layout_toRightOf="@id/fgu_appt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/value"
+              android:icon="@drawable/ic_menu_value"
+              android:title="商店"/>
+        <item
+            android:id="@+id/nav_storeInfo"
+            android:icon="@drawable/ic_menu_stor_info"
+            android:title="个人资料"/>
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_menu_help"
+            android:title="帮助"/>
+        <item
+            android:id="@+id/nav_updata"
+            android:icon="@drawable/ic_menu_update"
+            android:title="检查更新"/>
+        <item
+            android:id="@+id/nav_advice"
+            android:icon="@drawable/ic_menu_advice"
+            android:title="建议与反馈"/>
+    </group>
+</menu>

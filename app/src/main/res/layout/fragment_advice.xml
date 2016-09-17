@@ -1,0 +1,41 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBacrGround"
+    tools:context="layout.AdviceFragment">
+
+    <EditText
+        android:id="@+id/fga_edit_qq"
+        android:hint="请填写您的qq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fga_line"/>
+
+    <View
+        android:id="@+id/fga_line"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_above="@+id/fga_editext"/>
+    <EditText
+        android:id="@+id/fga_editext"
+        android:gravity="start"
+        android:hint="请描述您的问题"
+        android:textColor="@color/colorText"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"/>
+
+
+    <ImageButton
+        android:id="@+id/fga_btn"
+        android:background="@color/colorBacrGround"
+        android:paddingRight="16dp"
+        android:src="@drawable/ic_go_to_next"
+        android:scaleType="fitEnd"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+</RelativeLayout>

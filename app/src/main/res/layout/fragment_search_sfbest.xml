@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fab="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <!--<include layout="@layout/content_search"/>-->
+    <ListView
+        android:id="@+id/fgs_sfbest_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/fab_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        fab:fab_addButtonColorNormal="@color/colorFAB"
+        fab:fab_icon="@drawable/ic_add_24dp"
+        fab:fab_labelStyle="@style/menu_labels_style"
+        fab:fab_labelsPosition="left">  >
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_fab_1"
+            fab:fab_colorNormal="@color/colorFAB"
+            fab:fab_size="mini"
+            fab:fab_icon="@drawable/user"
+            fab:fab_title="搜名字"/>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_fab_2"
+            fab:fab_colorNormal="@color/colorFAB"
+            fab:fab_size="mini"
+            fab:fab_icon="@drawable/tel"
+            fab:fab_title="搜手机号码"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_fab_3"
+            fab:fab_colorNormal="@color/colorFAB"
+            fab:fab_size="mini"
+            fab:fab_icon="@drawable/post"
+            fab:fab_title="搜快递单号"/>
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</android.support.design.widget.CoordinatorLayout>

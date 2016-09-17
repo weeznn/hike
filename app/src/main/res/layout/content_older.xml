@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.nuc.hikeplus.OlderActivity"
+    tools:showIn="@layout/activity_older">
+
+    <FrameLayout
+        android:id="@+id/older_framlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/content_order_linner_layout"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/userinfoxml"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="用户信息"
+                android:textSize="@dimen/first_class_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:paddingTop="20dp"
+                android:textSize="@dimen/second_class_title"
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userinfoxml"/>
+            <TextView
+                android:paddingTop="15dp"
+                android:textSize="@dimen/second_class_title"
+                android:id="@+id/tel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"/>
+            <TextView
+                android:paddingTop="15dp"
+                android:textSize="@dimen/second_class_title"
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tel"/>
+            <View
+                android:id="@+id/order_line_1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DCDCDC"
+                android:layout_below="@+id/address"/>
+            <TextView
+                android:id="@+id/orderinfoxml"
+                android:paddingTop="20dp"
+                android:text="订单列表"
+                android:textSize="@dimen/first_class_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/order_line_1"/>
+            <TextView
+                android:paddingTop="15dp"
+                android:textSize="@dimen/second_class_title"
+                android:id="@+id/order_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/orderinfoxml"/>
+            <ListView
+                android:paddingTop="20dp"
+                android:id="@+id/orderList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/order_no">
+
+            </ListView>
+
+            <View
+                android:id="@+id/order_line_2"
+                android:paddingTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DCDCDC"
+                android:layout_below="@+id/orderList"/>
+
+            <TextView
+                android:id="@+id/order_money_pay"
+                android:padding="20dp"
+                android:textSize="@dimen/first_class_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/order_line_2"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/order_money_pay"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/older_image"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+
+
+
+</LinearLayout>

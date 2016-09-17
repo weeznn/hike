@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             android:background="#000000"
+             tools:context="layout.ClockFragment">
+
+    <ImageButton
+        android:id="@+id/fgc_imagebtn"
+        android:scaleType="fitCenter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:padding="16dp"
+        android:textSize="10dp"
+        android:textColor="#ff0000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"/>
+
+    <TextView
+        android:textSize="10dp"
+        android:textColor="@color/colorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageinfotextView"
+        android:layout_gravity="center_horizontal|bottom"/>
+
+
+</FrameLayout>
