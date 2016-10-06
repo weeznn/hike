@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.nuc.hikeplus.wifihot.ShareActivity">
+
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:background="@color/colorBacrGround"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/share_line_1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <Button
+            android:id="@+id/getbtn"
+            android:textSize="60dp"
+            android:text="接收"
+            android:background="@color/colorBacrGround"
+            android:textColor="@color/colorFAB"
+            android:layout_centerHorizontal="true"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/share_line_1"/>
+
+    </RelativeLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/share_framelay"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:visibility="visible"
+            android:id="@+id/share_view"
+            android:background="@color/colorFAB"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:id="@+id/share_line_2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+
+            <Button
+                android:id="@+id/hotbtn"
+                android:textSize="60dp"
+                android:text="分享"
+                android:background="@color/colorFAB"
+                android:textColor="@color/colorBacrGround"
+                android:layout_centerHorizontal="true"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/share_line_2"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:id="@+id/share_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ListView>
+        </RelativeLayout>
+    </FrameLayout>
+
+
+
+</LinearLayout>

@@ -7,6 +7,7 @@ import android.util.Log;
 import com.baofeng.mojing.unity.MojingActivity;
 import com.unity3d.player.UnityPlayer;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class HikeUnityActivity extends MojingActivity {
@@ -84,7 +85,7 @@ public class HikeUnityActivity extends MojingActivity {
         if(name.isEmpty()){
             return null;
         }else {
-            List<String> stringList = null;
+            List<String> stringList = new ArrayList<String>();
 //            int i = -1,j=0;
 //            do {
 //                i = name.indexOf("|", j);
@@ -92,10 +93,11 @@ public class HikeUnityActivity extends MojingActivity {
 //                stringList.add(name.substring(i,name.length()));
 //                j=i;
 //            } while (0==i);
-            int i=name.indexOf("|");
-            stringList.add(name.substring(i,name.length()));
+            int i=name.indexOf("#");
+            stringList.add(name.substring(i+1,name.length()));
 
             Log.i(TAG,stringList.toString());
+            Log.i(TAG,stringList.get(0));
             return stringList.get(0);
         }
 

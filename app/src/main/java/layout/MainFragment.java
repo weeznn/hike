@@ -22,7 +22,6 @@ import android.widget.ImageView;
 import com.getbase.floatingactionbutton.FloatingActionButton;
 import com.nuc.hikeplus.HikeUnityActivity;
 import com.nuc.hikeplus.LoginActivity;
-import com.nuc.hikeplus.OlderActivity;
 import com.nuc.hikeplus.R;
 import com.nuc.hikeplus.SearchActivity;
 
@@ -31,10 +30,10 @@ public class MainFragment extends Fragment {
 
     private Context context;
     private Toolbar toolbar=null;
-    private FloatingActionButton fab1=null,fab2=null;
+    private FloatingActionButton fab1=null,fab2=null,fab3=null;
     private WebView webView=null;
     private boolean blockNetImage;
-    private Button button=null;//测试
+    private Button button=null;//测试.pl
     private FrameLayout frameLayout=null;
     private ImageView frameLy_inageView=null;
 
@@ -67,26 +66,28 @@ public class MainFragment extends Fragment {
 
         fab1 = (FloatingActionButton) view.findViewById(R.id.fgm_fab_1);
         fab2 = (FloatingActionButton) view.findViewById(R.id.fgm_fab_2);
+//        fab3= (FloatingActionButton) view.findViewById(R.id.fgm_fab_3);
+
         webView = (WebView) view.findViewById(R.id.webview);
-        button = (Button) view.findViewById(R.id.btn_main);
+//        button = (Button) view.findViewById(R.id.btn_main);
         frameLayout= (FrameLayout) view.findViewById(R.id.content_main_frameLy);
         frameLy_inageView= (ImageView) view.findViewById(R.id.content_main_frameLy_image);
 
 
-        //测试下单按钮
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), OlderActivity.class);
-                intent.putExtra("goodsName", "花瓶");
-                intent.putExtra("receiverName", "郝文章");
-                intent.putExtra("receiverTel", "15513020014");
-                intent.putExtra("receiverProvince", "山西省");
-                intent.putExtra("receiverCity", "太原市");
-                intent.putExtra("receiverAddress", "中北大学");
-                startActivity(intent);
-            }
-        });
+//        //测试下单按钮
+//        button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(getActivity(), OlderActivity.class);
+//                intent.putExtra("goodsName", "花瓶");
+//                intent.putExtra("receiverName", "郝文章");
+//                intent.putExtra("receiverTel", "15513020014");
+//                intent.putExtra("receiverProvince", "山西省");
+//                intent.putExtra("receiverCity", "太原市");
+//                intent.putExtra("receiverAddress", "中北大学");
+//                startActivity(intent);
+//            }
+//        });
         //VR商城按钮
         fab1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -125,6 +126,15 @@ public class MainFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+//        //vr分享按钮
+//        fab3.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent=new Intent(getActivity(), ShareActivity.class);
+//                startActivity(intent);
+//            }
+//        });
 
         //webview
 
